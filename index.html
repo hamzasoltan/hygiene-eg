@@ -6,7 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hygiene Egypt</title>
 <meta name="description" content="Hygiene Egypt لتوفير حلول الهايجين الصناعية وتجهيز غرف التعقيم — أجهزة غسيل وتجفيف وتعقيم الأيدي والأرجل لمصانع الأغذية والأدوية والمنشآت الطبية.">
-<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="images/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="images/favicon-180.png">
 
 <!-- بووتستراب محلي (من نفس المجلد) -->
 <link href="bootstrap.min.css" rel="stylesheet">
@@ -18,7 +20,7 @@
 <body>
 
 <!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg navbar-store sticky-top py-3">
+<nav class="navbar navbar-expand-xl navbar-store sticky-top py-3">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
       <img src="images/logo.png" alt="Hygiene Egypt" class="brand-logo">
@@ -28,16 +30,22 @@
       <i class="bi bi-list fs-2"></i>
     </button>
     <div class="collapse navbar-collapse" id="navMain">
-      <ul class="navbar-nav mx-auto gap-lg-4 mt-3 mt-lg-0">
-        <li class="nav-item"><a class="nav-link nav-link-store" href="#about">من نحن</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-store" href="#audience">من نستهدف</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-store" href="#products">منتجاتنا</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-store" href="#portfolio">سابقة أعمالنا</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-store" href="#gallery">معرض الأعمال</a></li>
-        <li class="nav-item"><a class="nav-link nav-link-store" href="#contact">اتصل بنا</a></li>
+      <ul class="navbar-nav mx-auto gap-xl-4 mt-3 mt-xl-0">
+        <li class="nav-item"><a class="nav-link nav-link-store" href="#about" data-i18n="nav_about">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-store" href="#audience" data-i18n="nav_audience">من نستهدف</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-store" href="#products" data-i18n="nav_products">منتجاتنا</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-store" href="#portfolio" data-i18n="nav_portfolio">سابقة أعمالنا</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-store" href="#gallery" data-i18n="nav_gallery">معرض الأعمال</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-store" href="#contact" data-i18n="nav_contact">اتصل بنا</a></li>
       </ul>
-      <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
-        <a href="#contact" class="btn btn-nav-cta">اطلب عرض سعر</a>
+      <div class="d-flex align-items-center gap-2 gap-xl-3 mt-3 mt-xl-0">
+        <button type="button" class="btn btn-nav-icon" onclick="toggleTheme()" title="الوضع الليلي/النهاري">
+          <i class="bi bi-sun-fill" id="themeToggleIcon"></i>
+        </button>
+        <button type="button" class="btn btn-nav-icon btn-nav-lang" onclick="toggleLanguage()" title="Language">
+          <span id="langToggleLabel">EN</span>
+        </button>
+        <a href="#contact" class="btn btn-nav-cta" data-i18n="nav_quote">اطلب عرض سعر</a>
       </div>
     </div>
   </div>
@@ -48,18 +56,18 @@
   <div class="container">
     <div class="row align-items-center g-5">
       <div class="col-lg-6">
-        <span class="hero-eyebrow"><i class="bi bi-patch-check-fill"></i> تصنيع محلي بمعايير عالمية</span>
-        <h1>حماية تقدر تثق فيها من <em>أول خطوة</em></h1>
-        <p>Hygiene Egypt شركة متخصصة في توفير حلول الهايجين الصناعية وتجهيز غرف التعقيم، بأجهزة غسيل وتجفيف وتعقيم الأيدي وأنظمة تعقيم الأحذية، لخدمة مصانع الأغذية والأدوية وكل صناعة تتطلب أعلى معايير النظافة والسلامة.</p>
+        <span class="hero-eyebrow"><i class="bi bi-patch-check-fill"></i> <span data-i18n="hero_eyebrow">تصنيع محلي بمعايير عالمية</span></span>
+        <h1><span data-i18n="hero_title_1">حماية تقدر تثق فيها من </span><em data-i18n="hero_title_em">أول خطوة</em></h1>
+        <p data-i18n="hero_p">Hygiene Egypt شركة متخصصة في توفير حلول الهايجين الصناعية وتجهيز غرف التعقيم، بأجهزة غسيل وتجفيف وتعقيم الأيدي وأنظمة تعقيم الأحذية، لخدمة مصانع الأغذية والأدوية وكل صناعة تتطلب أعلى معايير النظافة والسلامة.</p>
         <div class="d-flex gap-3 mt-4 flex-wrap">
-          <a href="#products" class="btn btn-mint"><i class="bi bi-grid-3x3-gap-fill ms-1"></i> تصفح المنتجات</a>
-          <a href="#contact" class="btn btn-ghost-line">تواصل مع فريق المبيعات</a>
+          <a href="#products" class="btn btn-mint"><i class="bi bi-grid-3x3-gap-fill"></i> <span data-i18n="hero_btn1">تصفح المنتجات</span></a>
+          <a href="#contact" class="btn btn-ghost-line" data-i18n="hero_btn2">تواصل مع فريق المبيعات</a>
         </div>
         <div class="d-flex gap-4 mt-5 flex-wrap">
-          <div class="stat-box"><div class="stat-num">+10</div><div class="stat-label">سنوات خبرة</div></div>
-          <div class="stat-box"><div class="stat-num">+250</div><div class="stat-label">عميل ومنشأة</div></div>
-          <div class="stat-box"><div class="stat-num">+24</div><div class="stat-label">نظام ومعدة</div></div>
-          <div class="stat-box"><div class="stat-num">سنة</div><div class="stat-label">ضمان كامل</div></div>
+          <div class="stat-box"><div class="stat-num">+10</div><div class="stat-label" data-i18n="stat1">سنوات خبرة</div></div>
+          <div class="stat-box"><div class="stat-num">+250</div><div class="stat-label" data-i18n="stat2">عميل ومنشأة</div></div>
+          <div class="stat-box"><div class="stat-num">+24</div><div class="stat-label" data-i18n="stat3">نظام ومعدة</div></div>
+          <div class="stat-box"><div class="stat-num">سنة</div><div class="stat-label" data-i18n="stat4">ضمان كامل</div></div>
         </div>
       </div>
       <div class="col-lg-6">
@@ -68,7 +76,7 @@
           <div class="p-ring r2"></div>
           <div class="p-ring r3"></div>
           <div class="protect-core"><i class="bi bi-shield-fill-check"></i></div>
-          <div class="protect-tag" style="bottom:-6px;"><i class="bi bi-droplet-half"></i> نطاق تعقيم فعّال</div>
+          <div class="protect-tag" style="bottom:-6px;"><i class="bi bi-droplet-half"></i> <span data-i18n="protect_tag">نطاق تعقيم فعّال</span></div>
         </div>
       </div>
     </div>
@@ -80,9 +88,9 @@
   <div class="container">
     <div class="row g-5 align-items-start">
       <div class="col-lg-5">
-        <div class="section-title"><span class="bar"></span><h2>من نحن</h2></div>
+        <div class="section-title"><span class="bar"></span><h2 data-i18n="about_title">من نحن</h2></div>
         <div class="about-copy">
-          <p>في هايجين إيجيبت، نؤمن بأن الجودة تبدأ من بيئة إنتاج آمنة، وأن تطبيق أعلى معايير الهايجين هو الأساس لحماية المنتج وتعزيز كفاءة التشغيل. نحن شركة متخصصة في توفير حلول الهايجين الصناعية وتجهيز غرف التعقيم، حيث نقدم مجموعة متكاملة من أجهزة غسيل وتجفيف وتعقيم الأيدي، وأنظمة تعقيم وتنظيف الأحذية والأرجل، إلى جانب تصميم وتجهيز غرف الهايجين بما يلبي احتياجات مصانع الأغذية والأدوية وغيرها من الصناعات التي تتطلب أعلى مستويات النظافة والسلامة.</p>
+          <p data-i18n="about_p">في هايجين إيجيبت، نؤمن بأن الجودة تبدأ من بيئة إنتاج آمنة، وأن تطبيق أعلى معايير الهايجين هو الأساس لحماية المنتج وتعزيز كفاءة التشغيل. نحن شركة متخصصة في توفير حلول الهايجين الصناعية وتجهيز غرف التعقيم، حيث نقدم مجموعة متكاملة من أجهزة غسيل وتجفيف وتعقيم الأيدي، وأنظمة تعقيم وتنظيف الأحذية والأرجل، إلى جانب تصميم وتجهيز غرف الهايجين بما يلبي احتياجات مصانع الأغذية والأدوية وغيرها من الصناعات التي تتطلب أعلى مستويات النظافة والسلامة.</p>
         </div>
       </div>
       <div class="col-lg-7">
@@ -90,29 +98,29 @@
           <div class="col-sm-6">
             <div class="value-card">
               <div class="value-icon"><i class="bi bi-eye-fill"></i></div>
-              <h5>رؤيتنا</h5>
-              <p>نكون الاختيار الأول لحلول الهايجين الصناعية وتجهيز غرف التعقيم في السوق المحلي والعربي.</p>
+              <h5 data-i18n="value1_title">رؤيتنا</h5>
+              <p data-i18n="value1_p">نكون الاختيار الأول لحلول الهايجين الصناعية وتجهيز غرف التعقيم في السوق المحلي والعربي.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="value-card">
               <div class="value-icon"><i class="bi bi-bullseye"></i></div>
-              <h5>رسالتنا</h5>
-              <p>بناء بيئة إنتاج أكثر أمانًا وكفاءة لعملائنا، من خلال حلول موثوقة وخدمة احترافية وشراكة طويلة الأمد.</p>
+              <h5 data-i18n="value2_title">رسالتنا</h5>
+              <p data-i18n="value2_p">بناء بيئة إنتاج أكثر أمانًا وكفاءة لعملائنا، من خلال حلول موثوقة وخدمة احترافية وشراكة طويلة الأمد.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="value-card">
               <div class="value-icon"><i class="bi bi-award-fill"></i></div>
-              <h5>الجودة</h5>
-              <p>حلول أوتوماتيكية بخامات عالية الجودة، مصممة لتقليل مخاطر التلوث والالتزام بالمعايير العالمية لسلامة الإنتاج.</p>
+              <h5 data-i18n="value3_title">الجودة</h5>
+              <p data-i18n="value3_p">حلول أوتوماتيكية بخامات عالية الجودة، مصممة لتقليل مخاطر التلوث والالتزام بالمعايير العالمية لسلامة الإنتاج.</p>
             </div>
           </div>
           <div class="col-sm-6">
             <div class="value-card">
               <div class="value-icon"><i class="bi bi-people-fill"></i></div>
-              <h5>فريقنا</h5>
-              <p>فريق متخصص في تصميم وتجهيز حلول الهايجين الصناعية، بيطوّر الأنظمة باستمرار لخدمة كل صناعة تتطلب أعلى معايير النظافة.</p>
+              <h5 data-i18n="value4_title">فريقنا</h5>
+              <p data-i18n="value4_p">فريق متخصص في تصميم وتجهيز حلول الهايجين الصناعية، بيطوّر الأنظمة باستمرار لخدمة كل صناعة تتطلب أعلى معايير النظافة.</p>
             </div>
           </div>
         </div>
@@ -124,8 +132,8 @@
 <!-- ================= AUDIENCE ================= -->
 <section class="section-pad" id="audience" style="background:var(--bg-soft);">
   <div class="container">
-    <div class="section-title"><span class="bar"></span><h2>من نستهدف</h2></div>
-    <p class="section-sub">حلولنا مصممة لتغطية احتياجات القطاعات الغذائية والدوائية التي تتطلب أعلى معايير الهايجين الصناعي</p>
+    <div class="section-title"><span class="bar"></span><h2 data-i18n="audience_title">من نستهدف</h2></div>
+    <p class="section-sub" data-i18n="audience_sub">حلولنا مصممة لتغطية احتياجات القطاعات الغذائية والدوائية التي تتطلب أعلى معايير الهايجين الصناعي</p>
     <div class="row g-4" id="audienceGrid"></div>
   </div>
 </section>
@@ -133,18 +141,18 @@
 <!-- ================= PRODUCTS ================= -->
 <section class="section-pad" id="products">
   <div class="container">
-    <div class="section-title"><span class="bar"></span><h2>منتجاتنا</h2></div>
-    <p class="section-sub">تشكيلة من أجهزة وأنظمة الهايجين الصناعي تناسب كل قطاع — للحصول على السعر والمواصفات المناسبة لنشاطك، اطلب عرض سعر مباشر</p>
+    <div class="section-title"><span class="bar"></span><h2 data-i18n="products_title">منتجاتنا</h2></div>
+    <p class="section-sub" data-i18n="products_sub">تشكيلة من أجهزة وأنظمة الهايجين الصناعي تناسب كل قطاع — للحصول على السعر والمواصفات المناسبة لنشاطك، اطلب عرض سعر مباشر</p>
 
     <div class="d-flex chip-row overflow-auto pb-2 mb-4">
-      <span class="chip active">الكل</span>
-      <span class="chip"><i class="bi bi-star-fill ms-1"></i>الأكثر طلبًا</span>
-      <span class="chip">تعقيم يد</span>
-      <span class="chip">تعقيم قدم</span>
-      <span class="chip">غسيل باسكت</span>
-      <span class="chip">أحواض</span>
-      <span class="chip">خزانات</span>
-      <span class="chip">معدات مساعدة</span>
+      <span class="chip active" data-filter="الكل" data-i18n="chip_all">الكل</span>
+      <span class="chip d-inline-flex align-items-center gap-1" data-filter="الأكثر طلبًا"><i class="bi bi-star-fill"></i><span data-i18n="chip_best">الأكثر طلبًا</span></span>
+      <span class="chip" data-filter="تعقيم يد" data-i18n="chip_hand">تعقيم يد</span>
+      <span class="chip" data-filter="تعقيم قدم" data-i18n="chip_foot">تعقيم قدم</span>
+      <span class="chip" data-filter="غسيل باسكت" data-i18n="chip_basket">غسيل باسكت</span>
+      <span class="chip" data-filter="أحواض" data-i18n="chip_sinks">أحواض</span>
+      <span class="chip" data-filter="خزانات" data-i18n="chip_cabinets">خزانات</span>
+      <span class="chip" data-filter="معدات مساعدة" data-i18n="chip_support">معدات مساعدة</span>
     </div>
 
     <div class="row g-4" id="productGrid"></div>
@@ -154,11 +162,14 @@
 <!-- ================= PORTFOLIO ================= -->
 <section class="section-pad" id="portfolio" style="background:var(--bg-soft);">
   <div class="container">
-    <div class="section-title"><span class="bar"></span><h2>سابقة أعمالنا</h2></div>
-    <p class="section-sub">من أهم الشركات والمنشآت اللي وثقت في حلول Hygiene Egypt</p>
+    <div class="section-title"><span class="bar"></span><h2 data-i18n="portfolio_title">سابقة أعمالنا</h2></div>
+    <p class="section-sub" data-i18n="portfolio_sub">من أهم الشركات والمنشآت اللي وثقت في حلول Hygiene Egypt</p>
     <div class="row g-4 align-items-center" id="clientsGrid"></div>
     <div class="text-center mt-4" id="clientsMoreWrap">
-      <button class="btn btn-ghost-line" id="clientsMoreBtn">عرض المزيد <i class="bi bi-chevron-down ms-1"></i></button>
+      <button class="btn btn-ghost-line" id="clientsMoreBtn"><span data-i18n="btn_more">عرض المزيد</span> <i class="bi bi-chevron-down"></i></button>
+    </div>
+    <div class="text-center mt-4 d-none" id="clientsLessWrap">
+      <button class="btn btn-ghost-line" id="clientsLessBtn"><span data-i18n="btn_less">عرض أقل</span> <i class="bi bi-chevron-up"></i></button>
     </div>
   </div>
 </section>
@@ -166,8 +177,8 @@
 <!-- ================= GALLERY ================= -->
 <section class="section-pad" id="gallery">
   <div class="container">
-    <div class="section-title"><span class="bar"></span><h2>معرض أعمالنا</h2></div>
-    <p class="section-sub">لمحة من داخل خط الإنتاج والتعبئة والتغليف بالمصنع</p>
+    <div class="section-title"><span class="bar"></span><h2 data-i18n="gallery_title">معرض أعمالنا</h2></div>
+    <p class="section-sub" data-i18n="gallery_sub">لمحة من داخل خط الإنتاج والتعبئة والتغليف بالمصنع</p>
     <div class="row g-4" id="galleryGrid"></div>
   </div>
 </section>
@@ -175,8 +186,8 @@
 <!-- ================= CONTACT ================= -->
 <section class="section-pad" id="contact" style="background:var(--bg-soft);">
   <div class="container">
-    <div class="section-title"><span class="bar"></span><h2>اتصل بنا</h2></div>
-    <p class="section-sub">جاهزين نجاوب على استفساراتك ونجهزلك عرض سعر يناسب نشاطك</p>
+    <div class="section-title"><span class="bar"></span><h2 data-i18n="contact_title">اتصل بنا</h2></div>
+    <p class="section-sub" data-i18n="contact_sub">جاهزين نجاوب على استفساراتك ونجهزلك عرض سعر يناسب نشاطك</p>
 
     <div class="row g-4">
       <div class="col-lg-7">
@@ -184,38 +195,38 @@
           <form class="contact-form" id="contactForm" onsubmit="return false;">
             <div class="row g-3">
               <div class="col-sm-6">
-                <label>الاسم</label>
-                <input type="text" class="form-control" placeholder="اسمك بالكامل" required>
+                <label data-i18n="form_name">الاسم</label>
+                <input type="text" class="form-control" placeholder="اسمك بالكامل" data-i18n-placeholder="form_name_ph" required>
               </div>
               <div class="col-sm-6">
-                <label>رقم الهاتف</label>
+                <label data-i18n="form_phone">رقم الهاتف</label>
                 <input type="tel" class="form-control" placeholder="01xxxxxxxxx" required>
               </div>
               <div class="col-sm-6">
-                <label>اسم الجهة / المنشأة</label>
-                <input type="text" class="form-control" placeholder="اسم الجهة أو المنشأة" required>
+                <label data-i18n="form_org">اسم الجهة / المنشأة</label>
+                <input type="text" class="form-control" placeholder="اسم الجهة أو المنشأة" data-i18n-placeholder="form_org_ph" required>
               </div>
               <div class="col-sm-6">
-                <label>نوع النشاط</label>
+                <label data-i18n="form_activity">نوع النشاط</label>
                 <select class="form-select" required>
-                  <option>مصانع غذائية / مصانع المشروبات</option>
-                  <option>مصانع غذائية / مصانع المخبوزات والحلويات</option>
-                  <option>مصانع غذائية / مصانع التعليب والحفظ</option>
-                  <option>مصانع غذائية / مصانع الحبوب والنشويات</option>
-                  <option>منشأة طبية</option>
+                  <option data-i18n="activity1">مصانع غذائية / مصانع المشروبات</option>
+                  <option data-i18n="activity2">مصانع غذائية / مصانع المخبوزات والحلويات</option>
+                  <option data-i18n="activity3">مصانع غذائية / مصانع التعليب والحفظ</option>
+                  <option data-i18n="activity4">مصانع غذائية / مصانع الحبوب والنشويات</option>
+                  <option data-i18n="activity5">منشأة طبية</option>
                 </select>
               </div>
               <div class="col-12">
-                <label>موقع المصنع</label>
-                <input type="text" class="form-control" placeholder="المحافظة / المنطقة الصناعية" required>
+                <label data-i18n="form_location">موقع المصنع</label>
+                <input type="text" class="form-control" placeholder="المحافظة / المنطقة الصناعية" data-i18n-placeholder="form_location_ph" required>
               </div>
               <div class="col-12">
-                <label>رسالتك</label>
-                <textarea class="form-control" rows="4" placeholder="اكتب تفاصيل طلبك أو استفسارك..." required></textarea>
+                <label data-i18n="form_message">رسالتك</label>
+                <textarea class="form-control" rows="4" placeholder="اكتب تفاصيل طلبك أو استفسارك..." data-i18n-placeholder="form_message_ph" required></textarea>
               </div>
               <div class="col-12">
                 <button type="submit" class="btn btn-mint w-100 py-2 fw-bold" id="submitBtn" onclick="sendToWhatsapp()" disabled>
-                  <i class="bi bi-send-fill ms-1"></i> إرسال الطلب
+                  <i class="bi bi-send-fill"></i> <span data-i18n="form_submit">إرسال الطلب</span>
                 </button>
               </div>
             </div>
@@ -227,28 +238,28 @@
           <div class="info-row">
             <div class="info-icon"><i class="bi bi-telephone-fill"></i></div>
             <div>
-              <h6>اتصل بنا</h6>
+              <h6 data-i18n="info_phone">اتصل بنا</h6>
               <div class="small" dir="ltr">002 0100 740 56 42</div>
             </div>
           </div>
           <div class="info-row">
             <div class="info-icon"><i class="bi bi-whatsapp"></i></div>
             <div>
-              <h6>واتساب</h6>
-              <div class="small">متاحين للرد على استفساراتك يوميًا</div>
+              <h6 data-i18n="info_whatsapp">واتساب</h6>
+              <div class="small" data-i18n="info_whatsapp_sub">متاحين للرد على استفساراتك يوميًا</div>
             </div>
           </div>
           <div class="info-row">
             <div class="info-icon"><i class="bi bi-envelope-fill"></i></div>
             <div>
-              <h6>البريد الإلكتروني</h6>
+              <h6 data-i18n="info_email">البريد الإلكتروني</h6>
               <div class="small">info@hygiene-eg.com</div>
             </div>
           </div>
           <div class="info-row">
             <div class="info-icon"><i class="bi bi-globe2"></i></div>
             <div>
-              <h6>الموقع الإلكتروني</h6>
+              <h6 data-i18n="info_website">الموقع الإلكتروني</h6>
               <div class="small" dir="ltr">www.hygiene-eg.com</div>
             </div>
           </div>
@@ -274,26 +285,26 @@
           <img src="images/logo.png" alt="Hygiene Egypt" class="brand-logo">
           <span class="brand-name">Hygiene<span> Egypt</span></span>
         </div>
-        <p>حلول الهايجين الصناعية وتجهيز غرف التعقيم، بأجهزة غسيل وتجفيف وتعقيم الأيدي وأنظمة تعقيم الأحذية، لخدمة مصانع الأغذية والأدوية وكل صناعة تتطلب أعلى معايير النظافة والسلامة.</p>
+        <p data-i18n="footer_desc">حلول الهايجين الصناعية وتجهيز غرف التعقيم، بأجهزة غسيل وتجفيف وتعقيم الأيدي وأنظمة تعقيم الأحذية، لخدمة مصانع الأغذية والأدوية وكل صناعة تتطلب أعلى معايير النظافة والسلامة.</p>
       </div>
       <div class="col-6 col-lg-2">
-        <h6>روابط سريعة</h6>
+        <h6 data-i18n="footer_quicklinks">روابط سريعة</h6>
         <ul class="list-unstyled d-flex flex-column gap-2">
-          <li><a href="#about">من نحن</a></li>
-          <li><a href="#products">منتجاتنا</a></li>
-          <li><a href="#gallery">معرض الأعمال</a></li>
+          <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
+          <li><a href="#products" data-i18n="nav_products">منتجاتنا</a></li>
+          <li><a href="#gallery" data-i18n="nav_gallery">معرض الأعمال</a></li>
         </ul>
       </div>
       <div class="col-6 col-lg-2">
-        <h6>الدعم</h6>
+        <h6 data-i18n="footer_support">الدعم</h6>
         <ul class="list-unstyled d-flex flex-column gap-2">
-          <li><a href="#contact">تواصل معنا</a></li>
-          <li><a href="#portfolio">سابقة أعمالنا</a></li>
-          <li><a href="#audience">من نستهدف</a></li>
+          <li><a href="#contact" data-i18n="footer_contact_link">تواصل معنا</a></li>
+          <li><a href="#portfolio" data-i18n="nav_portfolio">سابقة أعمالنا</a></li>
+          <li><a href="#audience" data-i18n="nav_audience">من نستهدف</a></li>
         </ul>
       </div>
       <div class="col-lg-4">
-        <h6>تابعنا</h6>
+        <h6 data-i18n="footer_follow">تابعنا</h6>
         <div class="d-flex gap-2">
           <a href="https://www.facebook.com/share/1EArQ2pS4B/" target="_blank" class="icon-btn"><i class="bi bi-facebook"></i></a>
           <a href="https://wa.me/201007405642" target="_blank" class="icon-btn"><i class="bi bi-whatsapp"></i></a>
@@ -303,9 +314,9 @@
       </div>
     </div>
     <hr class="mt-4" style="border-color:var(--border);">
-    <div class="text-center small">© 2026 Hygiene Egypt لحلول الهايجين الصناعية. جميع الحقوق محفوظة.</div>
+    <div class="text-center small" data-i18n="footer_copyright">© 2026 Hygiene Egypt لحلول الهايجين الصناعية. جميع الحقوق محفوظة.</div>
     <div class="text-center small mt-2">
-      تطوير <a href="https://wa.me/201007408751" target="_blank" class="dev-credit-link">حمزة سلطان</a>
+      <span data-i18n="footer_dev">تطوير</span> <a href="https://wa.me/201007408751" target="_blank" class="dev-credit-link">حمزة سلطان</a>
     </div>
   </div>
 </footer>
@@ -330,46 +341,46 @@
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content" style="background:var(--surface); border:1px solid var(--border); border-radius:16px;">
       <div class="modal-header" style="border-color:var(--border);">
-        <h5 class="modal-title fw-bold">اطلب عرض سعر</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title fw-bold" data-i18n="quote_modal_title">اطلب عرض سعر</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
       <div class="modal-body">
         <div class="quote-product-tag mb-3" id="quoteProductName"></div>
         <form class="contact-form" id="quoteForm" onsubmit="return false;">
           <div class="row g-3">
             <div class="col-sm-6">
-              <label>الاسم</label>
-              <input type="text" class="form-control" placeholder="اسمك بالكامل" required>
+              <label data-i18n="form_name">الاسم</label>
+              <input type="text" class="form-control" placeholder="اسمك بالكامل" data-i18n-placeholder="form_name_ph" required>
             </div>
             <div class="col-sm-6">
-              <label>رقم الهاتف</label>
+              <label data-i18n="form_phone">رقم الهاتف</label>
               <input type="tel" class="form-control" placeholder="01xxxxxxxxx" required>
             </div>
             <div class="col-sm-6">
-              <label>اسم الجهة / المنشأة</label>
-              <input type="text" class="form-control" placeholder="اسم الجهة أو المنشأة" required>
+              <label data-i18n="form_org">اسم الجهة / المنشأة</label>
+              <input type="text" class="form-control" placeholder="اسم الجهة أو المنشأة" data-i18n-placeholder="form_org_ph" required>
             </div>
             <div class="col-sm-6">
-              <label>نوع النشاط</label>
+              <label data-i18n="form_activity">نوع النشاط</label>
               <select class="form-select" required>
-                <option>مصانع غذائية / مصانع المشروبات</option>
-                <option>مصانع غذائية / مصانع المخبوزات والحلويات</option>
-                <option>مصانع غذائية / مصانع التعليب والحفظ</option>
-                <option>مصانع غذائية / مصانع الحبوب والنشويات</option>
-                <option>منشأة طبية</option>
+                <option data-i18n="activity1">مصانع غذائية / مصانع المشروبات</option>
+                <option data-i18n="activity2">مصانع غذائية / مصانع المخبوزات والحلويات</option>
+                <option data-i18n="activity3">مصانع غذائية / مصانع التعليب والحفظ</option>
+                <option data-i18n="activity4">مصانع غذائية / مصانع الحبوب والنشويات</option>
+                <option data-i18n="activity5">منشأة طبية</option>
               </select>
             </div>
             <div class="col-12">
-              <label>موقع المصنع</label>
-              <input type="text" class="form-control" placeholder="المحافظة / المنطقة الصناعية" required>
+              <label data-i18n="form_location">موقع المصنع</label>
+              <input type="text" class="form-control" placeholder="المحافظة / المنطقة الصناعية" data-i18n-placeholder="form_location_ph" required>
             </div>
             <div class="col-12">
-              <label>رسالتك</label>
-              <textarea class="form-control" rows="4" placeholder="اكتب تفاصيل طلبك أو استفسارك..." required></textarea>
+              <label data-i18n="form_message">رسالتك</label>
+              <textarea class="form-control" rows="4" placeholder="اكتب تفاصيل طلبك أو استفسارك..." data-i18n-placeholder="form_message_ph" required></textarea>
             </div>
             <div class="col-12">
               <button type="submit" class="btn btn-mint w-100 py-2 fw-bold" id="quoteSubmitBtn" onclick="sendQuoteToWhatsapp()" disabled>
-                <i class="bi bi-send-fill ms-1"></i> إرسال الطلب
+                <i class="bi bi-send-fill"></i> <span data-i18n="form_submit">إرسال الطلب</span>
               </button>
             </div>
           </div>
