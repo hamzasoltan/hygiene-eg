@@ -6,9 +6,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hygiene Egypt</title>
 <meta name="description" content="Hygiene Egypt لتوفير حلول الهايجين الصناعية وتجهيز غرف التعقيم — أجهزة غسيل وتجفيف وتعقيم الأيدي والأرجل لمصانع الأغذية والأدوية والمنشآت الطبية.">
+<link rel="canonical" href="https://hygiene-eg.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hygiene Egypt">
+<meta property="og:title" content="Hygiene Egypt | حلول الهايجين الصناعية">
+<meta property="og:description" content="حلول الهايجين الصناعية وتجهيز غرف التعقيم — أجهزة غسيل وتجفيف وتعقيم الأيدي والأرجل لمصانع الأغذية والأدوية والمنشآت الطبية.">
+<meta property="og:image" content="https://hygiene-eg.com/images/logo.png">
+<meta property="og:url" content="https://hygiene-eg.com/">
+<meta property="og:locale" content="ar_EG">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hygiene Egypt | حلول الهايجين الصناعية">
+<meta name="twitter:description" content="حلول الهايجين الصناعية وتجهيز غرف التعقيم لمصانع الأغذية والأدوية والمنشآت الطبية.">
+<meta name="twitter:image" content="https://hygiene-eg.com/images/logo.png">
+
 <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="images/favicon-16.png" sizes="16x16" type="image/png">
 <link rel="apple-touch-icon" href="images/favicon-180.png">
+
+<!-- Structured Data (Schema.org) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hygiene Egypt",
+  "alternateName": "هايجين إيجيبت",
+  "url": "https://hygiene-eg.com/",
+  "logo": "https://hygiene-eg.com/images/logo.png",
+  "image": "https://hygiene-eg.com/images/logo.png",
+  "description": "شركة متخصصة في توفير حلول الهايجين الصناعية وتجهيز غرف التعقيم، بأجهزة غسيل وتجفيف وتعقيم الأيدي والأرجل، لخدمة مصانع الأغذية والأدوية والمنشآت الطبية.",
+  "telephone": "+20-100-740-5642",
+  "email": "info@hygiene-eg.com",
+  "sameAs": [
+    "https://www.facebook.com/share/1EArQ2pS4B/",
+    "https://www.instagram.com/egypthygiene",
+    "https://www.youtube.com/@egypthygiene"
+  ]
+}
+</script>
 
 <!-- بووتستراب محلي (من نفس المجلد) -->
 <link href="bootstrap.min.css" rel="stylesheet">
@@ -209,12 +247,14 @@
               <div class="col-sm-6">
                 <label data-i18n="form_activity">نوع النشاط</label>
                 <select class="form-select" required>
+                  <option value="" selected disabled data-i18n="activity_placeholder">اختر نوع النشاط</option>
                   <option data-i18n="activity1">مصانع غذائية / مصانع المشروبات</option>
                   <option data-i18n="activity2">مصانع غذائية / مصانع المخبوزات والحلويات</option>
                   <option data-i18n="activity3">مصانع غذائية / مصانع التعليب والحفظ</option>
                   <option data-i18n="activity4">مصانع غذائية / مصانع الحبوب والنشويات</option>
                   <option data-i18n="activity5">منشأة طبية</option>
                 </select>
+                <div class="field-note-required" data-i18n="activity_note">*يرجى اختيار النشاط</div>
               </div>
               <div class="col-12">
                 <label data-i18n="form_location">موقع المصنع</label>
@@ -363,12 +403,14 @@
             <div class="col-sm-6">
               <label data-i18n="form_activity">نوع النشاط</label>
               <select class="form-select" required>
+                <option value="" selected disabled data-i18n="activity_placeholder">اختر نوع النشاط</option>
                 <option data-i18n="activity1">مصانع غذائية / مصانع المشروبات</option>
                 <option data-i18n="activity2">مصانع غذائية / مصانع المخبوزات والحلويات</option>
                 <option data-i18n="activity3">مصانع غذائية / مصانع التعليب والحفظ</option>
                 <option data-i18n="activity4">مصانع غذائية / مصانع الحبوب والنشويات</option>
                 <option data-i18n="activity5">منشأة طبية</option>
               </select>
+              <div class="field-note-required" data-i18n="activity_note">*يرجى اختيار النشاط</div>
             </div>
             <div class="col-12">
               <label data-i18n="form_location">موقع المصنع</label>
