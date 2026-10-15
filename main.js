@@ -82,7 +82,7 @@ const PRODUCTS = [
     tags:["ديسبنسر صابون", "مجفف أيدي", "تشغيل فوتوسيل"], tags_en:["Soap dispenser", "Hand dryer", "Photocell operated"],
   },
   {
-    id:"p8", slug:"basket-washer-large", images:["basket-washer-large", "basket-washer-small"], badge:false, category:["غسيل باسكت"],
+    id:"p8", slug:"basket-washer-large", badge:false, category:["غسيل باسكت"],
     title:"ماكينة غسيل وتجفيف الباسكيت الحجم الكبير", title_en:"Large Basket Washer & Dryer",
     type:"غسيل باسكت", type_en:"Basket Washing",
     tags:["تنظف 550-900 باسكت/ساعة", "استانلس ستيل"], tags_en:["Cleans 550-900 baskets/hour", "Stainless steel"],
@@ -92,6 +92,12 @@ const PRODUCTS = [
     title:"ماكينة غسيل الباسكيت الحجم الصغير", title_en:"Small Basket Washer",
     type:"غسيل باسكت", type_en:"Basket Washing",
     tags:["تنظف 250-450 باسكت/ساعة", "استانلس ستيل"], tags_en:["Cleans 250-450 baskets/hour", "Stainless steel"],
+  },
+  {
+    id:"p25", slug:"basket-washer-sana-open", images:["basket-washer-sana-open", "basket-washer-sana-closed"], badge:false, category:["غسيل باسكت"],
+    title:"ماكينة غسيل الباسكت – سانا فودز", title_en:"Sana Foods Basket Washing Machine",
+    type:"غسيل باسكت", type_en:"Basket Washing",
+    tags:["تصميم استانلس ستيل", "نظام غسيل الباسكت"], tags_en:["Stainless steel construction", "Basket washing system"],
   },
   {
     id:"p10", slug:"hand-sanitizer-arm", badge:false, category:["تعقيم يد"],
