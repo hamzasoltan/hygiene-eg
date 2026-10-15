@@ -94,7 +94,7 @@ const PRODUCTS = [
     tags:["تنظف 250-450 باسكت/ساعة", "استانلس ستيل"], tags_en:["Cleans 250-450 baskets/hour", "Stainless steel"],
   },
   {
-    id:"p25", slug:"basket-washer-sana-open", images:["basket-washer-sana-open", "basket-washer-sana-closed"], badge:false, category:["غسيل باسكت"],
+    id:"p25", slug:"basket-washer-sana-open", images:["basket-dryer-open", "basket-dryer-closed"], badge:false, category:["غسيل باسكت"],
     title:"ماكينة غسيل الباسكت – سانا فودز", title_en:"Sana Foods Basket Washing Machine",
     type:"غسيل باسكت", type_en:"Basket Washing",
     tags:["تصميم استانلس ستيل", "نظام غسيل الباسكت"], tags_en:["Stainless steel construction", "Basket washing system"],
