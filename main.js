@@ -439,7 +439,7 @@ const GALLERY = [
   ] },
   { slug:"sana-foods-basket-dryer", icon:"bi-gear-wide-connected", emoji:"🧁",
     label:"ماكينة تجفيف الباسكت بمصنع سنا فودز", label_en:"Basket Dryer Machine at Sana Foods Factory", media:[
-    { type:"video", src:"images/gallery/sana-foods-basket-dryer.mp4" },
+    { type:"video", src:"images/gallery/basket-dryer.mp4" },
   ] },
 ];
 
