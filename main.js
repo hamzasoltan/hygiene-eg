@@ -437,6 +437,10 @@ const GALLERY = [
     label:"تجهيز غرفة التعقيم بمصنع ريو فودز", label_en:"Sanitizing Room Fit-Out at Rio Foods Factory", media:[
     { type:"video", src:"images/gallery/11.mp4" },
   ] },
+  { slug:"sana-foods-basket-dryer", icon:"bi-gear-wide-connected", emoji:"🧁",
+    label:"ماكينة تجفيف الباسكت بمصنع سنا فودز", label_en:"Basket Dryer Machine at Sana Foods Factory", media:[
+    { type:"video", src:"images/gallery/sana-foods-basket-dryer.mp4" },
+  ] },
 ];
 
 function renderGallery(){
