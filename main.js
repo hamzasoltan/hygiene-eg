@@ -230,7 +230,7 @@ function renderProductCard(p){
 
   return `
   <div class="col-sm-6 col-lg-4">
-    <div class="product-card" data-category="${p.category.join(',')}" data-bestseller="${p.badge}">
+    <div class="product-card ${p.id === 'p25' ? 'basket-sana-card' : ''}" data-category="${p.category.join(',')}" data-bestseller="${p.badge}">
       <div class="card-media">
         ${p.badge ? `<span class="badge-best">${badgeBestLabel}</span>` : ''}
         <span class="badge-form">${type}</span>
